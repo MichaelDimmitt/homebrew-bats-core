@@ -18,7 +18,8 @@ class BatsDetik < Formula
     def caveats
       <<~EOS
         To load the bats-detik lib in your bats test:
-            load '#{HOMEBREW_PREFIX}/lib/bats-support/lib/utils'
+
+            load '#{HOMEBREW_PREFIX}/lib/bats-detik/lib/utils'
             load '#{HOMEBREW_PREFIX}/lib/bats-detik/lib/detik'
 
             DETIK_CLIENT_NAME="kubectl"
@@ -27,6 +28,6 @@ class BatsDetik < Formula
 
     test do
       ENV["TEST_DEPS_DIR"] = "#{HOMEBREW_PREFIX}/lib"
-      system "bats", "#{lib}/bats-detik/test"
+      system "bats", "#{lib}/bats-detik/tests"
     end
 end

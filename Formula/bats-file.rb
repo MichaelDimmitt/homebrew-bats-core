@@ -17,7 +17,9 @@ class BatsFile < Formula
 
     def caveats
       <<~EOS
+
         To load the bats-file lib in your bats test:
+
             load '#{HOMEBREW_PREFIX}/lib/bats-support/load.bash'
             load '#{HOMEBREW_PREFIX}/lib/bats-file/load.bash'
       EOS

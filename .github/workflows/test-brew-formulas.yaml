@@ -15,7 +15,15 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew version output
         run: brew --version
+      - name: Setup BATS
+        uses: mig4/setup-bats@v1
       #- name: Brew install bats
       #  run: brew install bats-core
-      - name: Install support
+      - name: Bats-support AUDIT
+        run: brew audit --new-formula Formula/bats-support.rb
+        continue-on-error: true
+      - name: Bats-support INSTALL
         run: brew install --build-from-source --verbose Formula/bats-support.rb
+      - name: Bats-support TEST
+        run: brew test Formula/bats-support.rb
+        continue-on-error: true

@@ -1,0 +1,19 @@
+name: test-formulas
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-formulas:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check 
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Run a one-line script
+        run: brew version
+

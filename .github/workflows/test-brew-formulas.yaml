@@ -17,4 +17,3 @@ jobs:
         run: brew --version
       - name: Brew install bats
         run: brew install bats-core
-      - name: Brew install bats

@@ -12,9 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up Homebrew
-        #uses: Homebrew/actions/setup-homebrew@master
-        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        uses: Homebrew/actions/setup-homebrew@master
       - name: Brew version output
         run: brew --version
-      - name: Brew install bats
-        run: brew install bats-core
+      #- name: Brew install bats
+      #  run: brew install bats-core
+      - name: Install support
+        run: brew install --build-from-source --verbose Formula/bats-support.rb

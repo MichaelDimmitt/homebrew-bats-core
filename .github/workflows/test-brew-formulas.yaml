@@ -25,6 +25,7 @@ jobs:
         continue-on-error: true
       - name: Bats-support INSTALL
         run: brew install --build-from-source --verbose Formula/bats-support.rb
+        continue-on-error: true
       - name: Bats-support TEST
         run: brew test Formula/bats-support.rb
         continue-on-error: true
@@ -33,6 +34,7 @@ jobs:
         continue-on-error: true
       - name: Bats-assert INSTALL
         run: brew install --build-from-source --verbose Formula/bats-assert.rb
+        continue-on-error: true
       - name: Bats-assert TEST
         run: brew test Formula/bats-assert.rb
         continue-on-error: true
@@ -41,6 +43,7 @@ jobs:
         continue-on-error: true
       - name: Bats-file INSTALL
         run: brew install --build-from-source --verbose Formula/bats-file.rb
+        continue-on-error: true
       - name: Bats-file TEST
         run: brew test Formula/bats-file.rb
         continue-on-error: true
@@ -49,6 +52,7 @@ jobs:
         continue-on-error: true
       - name: Bats-detik INSTALL
         run: brew install --build-from-source --verbose Formula/bats-detik.rb
+        continue-on-error: true
       - name: Bats-detik TEST
         run: brew test Formula/bats-detik.rb
         continue-on-error: true

@@ -3,10 +3,10 @@ class BatsSupport < Formula
   homepage "https://github.com/bats-core/homebrew-bats-core"
   url "https://github.com/bats-core/bats-support/archive/refs/tags/v0.3.0.tar.gz"
   version "0.3.0"
-  head "https://github.com/bats-core/bats-support.git"
   sha256 "7815237aafeb42ddcc1b8c698fc5808026d33317d8701d5ec2396e9634e2918f"
+  head "https://github.com/bats-core/bats-support.git"
   license "MIT"
-  depends_on "bats-core"
+  #depends_on "bats-core"
 
   def install
     mkdir "bats-support"

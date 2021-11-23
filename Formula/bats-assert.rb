@@ -3,8 +3,8 @@ class BatsAssert < Formula
   homepage "https://github.com/bats-core/homebrew-bats-core"
   url "https://github.com/bats-core/bats-assert/archive/refs/tags/v2.0.0.tar.gz"
   version "2.0.0"
-  head "https://github.com/bats-core/bats-assert.git"
   sha256 "15dbf1abb98db785323b9327c86ee2b3114541fe5aa150c410a1632ec06d9903"
+  head "https://github.com/bats-core/bats-assert.git"
   license "MIT"
 
   def install

@@ -3,8 +3,8 @@ class BatsDetik < Formula
   homepage "https://github.com/bats-core/bats-detik"
   url "https://github.com/bats-core/bats-detik/archive/refs/tags/v1.1.0.tar.gz"
   version "v1.1.0"
-  head "https://github.com/bats-core/bats-detik.git"
   sha256 "1467f5f1d51211a0cb163cfceee65796e710fe8b3f4b6731d404eb075e9147e3"
+  head "https://github.com/bats-core/bats-detik.git"
   license "MIT"
 
   def install
